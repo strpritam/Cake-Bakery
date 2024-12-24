@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Contact</title>
+    <link rel="stylesheet" href="stylecontact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo1.png" alt="Restaurant Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <!-- Contact Details -->
+        <section class="contact-details">
+            <h1>Contact Us</h1>
+            <p><strong>Email:</strong> contact@restaurant.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Food Street, Flavor Town</p>
+        </section>
+
+        <!-- Write Review Button -->
+        <div class="write-review">
+            <button id="write-review-btn">Write Your Review Here</button>
+        </div>
+
+        <!-- Customer Reviews -->
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-container">
+                <!-- Example reviews -->
+                <div class="review">
+                    <img src="profile1.jpg" alt="Profile" class="profile-pic">
+                    <div>
+                        <p>⭐️⭐️⭐️⭐️⭐️</p>
+                        <p>"Amazing food!"</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="profile2.jpg" alt="Profile" class="profile-pic">
+                    <div>
+                        <p>⭐️⭐️⭐️⭐️⭐️</p>
+                        <p>"Best cakes in town."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us:</p>
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://facebook.com">Facebook</a>
+    </footer>
+
+ <!-- Review Modal -->
+<div id="review-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Write Your Review</h2>
+        <form id="review-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+            <label for="review-image">Upload Image:</label>
+            <input type="file" id="review-image" accept="image/*">
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
